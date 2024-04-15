@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Wellness Summary - Wellness Quest</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/dailysummary.css">
+</head>
+
+<body>
+    <div class="site-wrap">
+        <nav class="site-nav">
+            <div class="name">
+                Your Dashboard
+            </div>
+            <ul>
+                <li><a href="dashboard.html">Daily CheckBox</a></li>
+                <li class="active"><a href="daily-summary.html">Daily Summary</a></li>
+                <li><a href="activitylog.html">Activity Log</a></li>
+                <li><a href="hydration.html">Hydration Monitor</a></li>
+                <li><a href="nutrition.html">Nutrition Tracker</a></li>
+                <li><a href="mental-wellness.html">Mental Wellness</a></li>
+                <li><a href="social-forum.html">Social Forum</a></li>
+            </ul>
+        </nav>
+        <main>
+            <header>
+                <main class="admin__main">
+                    <div class="dashboard">
+                        <div class="dashboard__item dashboard__item--full">
+                            <div class="card">
+                                <div class="card__header">
+                                    Daily Wellness Summary
+                                </div>
+                                <div class="card__content">
+                                    <p>Track your daily wellness journey. Check your activity level, water intake,
+                                        nutrition, and mental wellness.</p>
+                                    <div class="summary">
+                                        <div class="summary__section">
+                                            <h3>Activity Log</h3>
+                                            <p id="activity-summary">Loading...</p>
+                                        </div>
+                                        <div class="summary__section">
+                                            <h3>Hydration Monitor</h3>
+                                            <p id="water-intake">Loading...</p>
+                                        </div>
+                                        <div class="summary__section">
+                                            <h3>Nutrition Tracker</h3>
+                                            <ul id="nutrition-summary">
+                                                <li>Calories: Loading...</li>
+                                                <li>Protein: Loading...</li>
+                                            </ul>
+                                        </div>
+                                        <div class="summary__section">
+                                            <h3>Mental Wellness</h3>
+                                            <p id="mental-wellness">Loading...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </header>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2024 All rights reserved Group 21 Wellness Quest.</p>
+    </footer>
+</body>
+<script src="assets/js/dailysummary.js"></script>
+
+</html>

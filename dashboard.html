@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="site-wrap">
+        <nav class="site-nav">
+            <div class="name">
+                Your Dashboard
+            </div>
+            <ul>
+                <li class="active"><a href="dashboard.html">Daily CheckBox</a></li>
+                <li><a href="daily-summary.html">Daily Summary</a></li>
+                <li><a href="activitylog.html">Activity Log</a></li>
+                <li><a href="hydration.html">Hydration Monitor</a></li>
+                <li><a href="nutrition.html">Nutrition Tracker</a></li>
+                <li><a href="mental-wellness.html">Mental Wellness</a></li>
+                <li><a href="social-forum.html">Social Forum</a></li>
+            </ul>
+        </nav>
+        <main>
+            <header>
+                <div class="breadcrumbs">
+                    <a href="index.html">Log Out</a>
+                </div>
+                <h1 class="title">CheckBox</h1>
+                <div class="rules-box">
+                    <h2>Dashboard Rules</h2>
+                    <ul>
+                        <li>Start at Level 1 and progress sequentially.</li>
+                        <li>Complete all tasks to unlock the next level.</li>
+                        <li>Your progress is automatically saved.</li>
+                    </ul>
+                </div>
+                <nav class="nav-tabs" id="nav-tabs">
+                    <a href="#level1-content" class="active">Level 1</a>
+                    <a href="#level2-content" class="locked level-locked" id="level2-link">Level 2</a>
+                    <a href="#level3-content" class="locked level-locked" id="level3-link">Level 3</a>
+                </nav>
+            </header>
+
+            <div id="level1-content" class="level-content">
+                <div class="content-columns">
+                    <div class="col">
+                        <div class="item">
+                            <input type="checkbox" id="item1-1" class="item-checkbox">
+                            <label for="item1-1">Drink 1 liter of water.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item1-2" class="item-checkbox">
+                            <label for="item1-1">Take a 10-minute walk.
+                            </label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item1-3" class="item-checkbox">
+                            <label for="item1-1">Eat a piece of fruit.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item1-4" class="item-checkbox">
+                            <label for="item1-1">Meditate for 5 minutes.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item1-5" class="item-checkbox">
+                            <label for="item1-1">Stretch for 10 minutes.</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item">
+                            <input type="checkbox" id="item1-6" class="item-checkbox">
+                            <label for="item1-1">Drink 2 liters of water.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item1-7" class="item-checkbox">
+                            <label for="item1-1">Take a 20-minute walk.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item1-8" class="item-checkbox">
+                            <label for="item1-1">Eat two servings of vegetables.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item1-9" class="item-checkbox">
+                            <label for="item1-1">Perform 10 minutes of deep breathing exercises.</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item">
+                            <input type="checkbox" id="item1-10" class="item-checkbox">
+                            <label for="item1-1">Drink 3 liters of water.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item1-11" class="item-checkbox">
+                            <label for="item1-1">Take a 30-minute walk.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item1-12" class="item-checkbox">
+                            <label for="item1-1">Cook a healthy meal.</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item">
+                            <input type="checkbox" id="item1-13" class="item-checkbox">
+                            <label for="item1-1">Complete a 15-minute yoga session.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item1-14" class="item-checkbox">
+                            <label for="item1-1">Write a journal entry about your day.</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="level2-content" class="level-content" style="display: none;">
+                <div class="content-columns">
+                    <div class="col">
+                        <div class="item">
+                            <input type="checkbox" id="item2-1" class="item-checkbox">
+                            <label for="item1-1">Jog for 15 minutes.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item2-2" class="item-checkbox">
+                            <label for="item1-1">Sleep for at least 7 hours.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item2-3" class="item-checkbox">
+                            <label for="item1-1">Avoid sugary snacks for the day.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item2-4" class="item-checkbox">
+                            <label for="item1-1">Eat a balanced meal for breakfast.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item2-5" class="item-checkbox">
+                            <label for="item1-1">Practice 20 minutes of mindfulness.</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item">
+                            <input type="checkbox" id="item2-6" class="item-checkbox">
+                            <label for="item1-1">Complete a 20-minute home workout.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item2-7" class="item-checkbox">
+                            <label for="item1-1">Prepare a vegetarian dinner.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item2-8" class="item-checkbox">
+                            <label for="item1-1">Spend an hour reading a book.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item2-9" class="item-checkbox">
+                            <label for="item1-1">Maintain 2 hours without screen time (excluding work/school).</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item">
+                            <input type="checkbox" id="item2-10" class="item-checkbox">
+                            <label for="item1-1">Run for 30 minutes.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item2-11" class="item-checkbox">
+                            <label for="item1-1">Complete a full-body workout session.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item2-12" class="item-checkbox">
+                            <label for="item1-1">Meditate for 30 minutes.</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item">
+                            <input type="checkbox" id="item2-13" class="item-checkbox">
+                            <label for="item1-1">Prepare all meals of the day healthily.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item2-14" class="item-checkbox">
+                            <label for="item1-1">Participate in a recreational sport for an hour.</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="level3-content" class="level-content" style="display: none;">
+                <div class="content-columns">
+                    <div class="col">
+                        <div class="item">
+                            <input type="checkbox" id="item3-1" class="item-checkbox">
+                            <label for="item1-1">Run a 5k.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item3-2" class="item-checkbox">
+                            <label for="item1-1">Participate in a fitness class.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item3-3" class="item-checkbox">
+                            <label for="item1-1">Go vegan for the day.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item3-4" class="item-checkbox">
+                            <label for="item1-1">Avoid caffeine for the day.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item3-5" class="item-checkbox">
+                            <label for="item1-1">Perform a digital detox for 24 hours.</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item">
+                            <input type="checkbox" id="item3-6" class="item-checkbox">
+                            <label for="item1-1">Complete a half-marathon training session.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item3-7" class="item-checkbox">
+                            <label for="item1-1">Swim for an hour.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item3-8" class="item-checkbox">
+                            <label for="item1-1">Prepare and consume all-organic meals.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item3-9" class="item-checkbox">
+                            <label for="item1-1">Complete an advanced yoga session.</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item">
+                            <input type="checkbox" id="item3-10" class="item-checkbox">
+                            <label for="item1-1">Hike a local trail of moderate difficulty.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item3-11" class="item-checkbox">
+                            <label for="item1-1">Engage in an hour of intense cardio.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item3-12" class="item-checkbox">
+                            <label for="item1-1">Fast from sunrise to sunset.</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item">
+                            <input type="checkbox" id="item3-13" class="item-checkbox">
+                            <label for="item1-1">Engage in a day-long wellness retreat.</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" id="item3-14" class="item-checkbox">
+                            <label for="item1-1">Complete a mindfulness retreat activity such as a silent day.</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2024 All rights reserved Group 21 Wellness Quest.</p>
+    </footer>
+</body>
+<script src="assets/js/script.js"></script>
+
+</html>

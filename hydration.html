@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydration - Wellness Quest</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/hydration.css">
+</head>
+
+<body>
+    <div class="site-wrap">
+        <nav class="site-nav">
+            <div class="name">
+                Your Dashboard
+            </div>
+            <ul>
+                <li><a href="dashboard.html">Daily CheckBox</a></li>
+                <li><a href="daily-summary.html">Daily Summary</a></li>
+                <li><a href="activitylog.html">Activity Log</a></li>
+                <li class="active"><a href="hydration.html">Hydration Monitor</a></li>
+                <li><a href="nutrition.html">Nutrition Tracker</a></li>
+                <li><a href="mental-wellness.html">Mental Wellness</a></li>
+                <li><a href="social-forum.html">Social Forum</a></li>
+            </ul>
+        </nav>
+        <main>
+            <header>
+                <main class="admin__main">
+                    <div class="dashboard">
+                        <div class="dashboard__item dashboard__item--full">
+                            <div class="card">
+                                <div class="card__header">
+                                    Hydration Monitor
+                                </div>
+                                <div class="card__content">
+                                    <p>Track your daily water intake and ensure you are staying well-hydrated.</p>
+
+                                    <!-- Water Intake Log Form -->
+                                    <form id="water-intake-form">
+                                        <label for="water-intake">Add water intake (in liters):</label>
+                                        <input type="number" id="water-intake" name="water-intake" step="0.1" min="0"
+                                            placeholder="e.g., 0.25 for 250ml">
+                                        <button type="submit" class="btn">Log Water Intake</button>
+                                        <button type="button" class="btn btn-reset"
+                                            onclick="resetIntake()">Reset</button>
+                                    </form>
+
+                                    <!-- Display Logged Water Intakes -->
+                                    <div id="logged-intakes">
+                                        <h3>Logged Water Intakes:</h3>
+                                        <ul id="intake-list"></ul>
+                                    </div>
+
+                                    <!-- Water Intake Progress -->
+                                    <div id="water-intake-progress">
+                                        <h3>Your Daily Intake:</h3>
+                                        <progress id="water-progress-bar" value="0" max="3">0%</progress>
+                                        <p><span id="current-intake">0</span> L out of <span
+                                                id="recommended-intake">3</span> L</p>
+                                    </div>
+
+                                    <!-- Hydration Tips -->
+                                    <div id="hydration-tips">
+                                        <h3>Hydration Tips:</h3>
+                                        <ul>
+                                            <li>Drink at least 3 liters of water a day for optimal hydration.</li>
+                                            <li>Carry a water bottle to remind you to take regular sips throughout the
+                                                day.</li>
+                                            <li>If you're active or in a hot climate, you may need to increase your
+                                                intake.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </header>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2024 All rights reserved Group 21 Wellness Quest.</p>
+    </footer>
+</body>
+<script src="assets/js/hydration.js"></script>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Wellness - Wellness Quest</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/mental-wellness.css">
+</head>
+
+<body>
+    <div class="site-wrap">
+        <nav class="site-nav">
+            <div class="name">
+                Your Dashboard
+            </div>
+            <ul>
+                <li><a href="dashboard.html">Daily CheckBox</a></li>
+                <li><a href="daily-summary.html">Daily Summary</a></li>
+                <li><a href="activitylog.html">Activity Log</a></li>
+                <li><a href="hydration.html">Hydration Monitor</a></li>
+                <li><a href="nutrition.html">Nutrition Tracker</a></li>
+                <li class="active"><a href="mental-wellness.html">Mental Wellness</a></li>
+                <li><a href="social-forum.html">Social Forum</a></li>
+            </ul>
+        </nav>
+        <main class="mental-wellness">
+            <header>
+                <main class="admin__main">
+                    <div class="dashboard">
+                        <!-- Mental Wellness -->
+                        <div class="dashboard__item dashboard__item--full">
+                            <div class="card">
+                                <div class="card__header">
+                                    Mental Wellness Resources
+                                </div>
+                                <div class="card__content">
+                                    <p>Explore resources and activities to enhance your mental health and emotional
+                                        well-being.</p>
+
+                                    <!-- Guided Meditations -->
+                                    <div>
+                                        <h3>Guided Meditations</h3>
+                                        <ul>
+                                            <li><a href="https://declutterthemind.com/guided-meditation/morning/">Morning
+                                                    Relaxation Meditation</a></li>
+                                            <li><a href="https://www.calm.com/blog/meditation-for-stress">Stress Relief
+                                                    Meditation</a></li>
+                                            <li><a
+                                                    href="https://www.healthline.com/health/meditation-for-sleep#how-it-helps">Sleep
+                                                    Inducing Meditation</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Stress Management Tips -->
+                                    <div>
+                                        <h3>Stress Management Tips</h3>
+                                        <ul>
+                                            <li>Take regular breaks from work or study.</li>
+                                            <li>Engage in physical activity or exercise regularly.</li>
+                                            <li>Practice mindfulness and deep breathing exercises.</li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Mood Tracking -->
+                                    <div>
+                                        <h3>Mood Tracking</h3>
+                                        <p>Track your mood daily and gain insights into patterns that affect your
+                                            emotional well-being.</p>
+                                        <form id="mood-tracking-form">
+                                            <input type="text" id="mood-input" placeholder="How are you feeling today?"
+                                                required>
+                                            <button type="submit" class="btn">Log Mood</button>
+                                            <button type="button" class="btn btn-reset" onclick="resetMoods()">Reset
+                                                Moods</button>
+                                        </form>
+                                        <!-- Where logged moods will be displayed -->
+                                        <div id="mood-logs">
+                                            <h4>Recent Moods:</h4>
+                                            <ul id="mood-list"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </header>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2024 All rights reserved Group 21 Wellness Quest.</p>
+    </footer>
+</body>
+<script src="assets/js/mental-wellness.js"></script>
+
+</html>

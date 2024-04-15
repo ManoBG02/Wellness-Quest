@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Forum - Wellness Quest</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/social-forum.css">
+</head>
+
+<body>
+    <div class="site-wrap">
+        <nav class="site-nav">
+            <div class="name">
+                Your Dashboard
+            </div>
+            <ul>
+                <li><a href="dashboard.html">Daily CheckBox</a></li>
+                <li><a href="daily-summary.html">Daily Summary</a></li>
+                <li><a href="activitylog.html">Activity Log</a></li>
+                <li><a href="hydration.html">Hydration Monitor</a></li>
+                <li><a href="nutrition.html">Nutrition Tracker</a></li>
+                <li><a href="mental-wellness.html">Mental Wellness</a></li>
+                <li class="active"><a href="social-forum.html">Social Forum</a></li>
+            </ul>
+        </nav>
+        <main>
+            <header>
+                <main class="admin__main">
+                    <div class="dashboard">
+                        <div class="dashboard__item dashboard__item--full">
+                            <div class="card">
+                                <div class="card__header">
+                                    Social Forum
+                                </div>
+                                <div class="card__content">
+                                    <h2>Connect and Grow Together</h2>
+                                    <!-- New Post Form -->
+                                    <div class="new-post-form">
+                                        <h3>Create a New Post</h3>
+                                        <textarea id="new-post-content" placeholder="Post a challenge"></textarea>
+                                        <button onclick="createNewPost()">Post</button>
+                                    </div>
+
+                                    <h2>Community Challenges</h2>
+                                    <!-- Post 1 -->
+                                    <div class="post">
+                                        <h3>Average 10,000 steps a day!</h3>
+                                        <p>Join us for a journey of wellness with our 10,000 steps a day challenge.
+                                            Share your progress and inspire others!</p>
+
+                                        <hr>
+                                        <!-- Comment Form -->
+                                        <div class="comment-form">
+                                            <input type="text" placeholder="Add a comment...">
+                                            <button onclick="submitComment(this)">Comment</button>
+                                        </div>
+                                        <!-- Comments Section -->
+                                        <div class="comments">
+                                            <h4>Comments:</h4>
+                                            <p>No comments yet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </header>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2024 All rights reserved Group 21 Wellness Quest.</p>
+    </footer>
+</body>
+<script src="assets/js/social-forum.js"></script>
+
+</html>
